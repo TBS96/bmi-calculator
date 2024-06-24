@@ -14,6 +14,12 @@ body{
     padding: 20px;
     border-radius: 8px;
     width: 300px;
+    box-shadow: 0px 0px 105px 10px rgb(255, 174, 0);
+    transition: 1s;
+}
+
+.container:hover{
+    box-shadow: 0px 0px 105px 10px rgba(255, 174, 0, 0.363);
 }
 
 h1{
@@ -38,6 +44,23 @@ input{
     box-sizing: border-box;
 }
 
+/* button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 145px;
+    transition: 0.9s;
+}
+
+button:hover{
+    background-color: #10eb0965;
+    width: 300px;
+    border-radius: 20px 5px 20px 5px;
+} */
+
 button{
     padding: 10px 20px;
     font-size: 16px;
@@ -45,15 +68,37 @@ button{
     border: 2px solid #333;
     border-radius: 5px;
     background-color: #fff;
-    transition: 0.2s;
+    width: 200px;
+    transition: all 0.5s;
 }
 
-button:hover{
-    background-color: #e0e0e0;
+button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span{
+    padding-right: 25px;
+}
+
+button:hover span:after{
+    opacity: 1;
+    right: 0;
 }
 
 #result{
     margin-top: 20px;
     font-size: 18px;
-    text-align: center
+    text-align: center;
 }
