@@ -1,1 +1,3 @@
-src is currently wip.
+# BMI Calculator
+
+## src is currently wip.
