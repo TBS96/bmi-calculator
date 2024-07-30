@@ -1,3 +1,5 @@
-# BMI Calculator
+# DOM Mini Project - 10
 
-## src is currently wip.
+``` bash
+BMI Calculator
+```
